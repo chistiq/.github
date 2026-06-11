@@ -219,7 +219,7 @@ More templates: [workspai.com/examples](https://workspai.com/examples)
 | Questions | [rapidkit-vscode/discussions](https://github.com/rapidkitlabs/rapidkit-vscode/discussions) |
 | RapidKit platform | [getrapidkit.com](https://getrapidkit.com) |
 | Workspai | [workspai.com](https://workspai.com) |
-| Support email | support@rapidkitlabs.com |
+| Support email | support@getrapidkit.com |
 
 When reporting an issue, include OS, the path you use (extension / npm / pipx), and version output:
 
