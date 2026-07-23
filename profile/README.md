@@ -1,13 +1,13 @@
 <div align="center">
 
-# RapidKit Labs
+# Chistiq Labs
 
 ## Open-source infrastructure for building and understanding software systems
 
 Home of **Workspai**, **RapidKit Core**, and the shared contracts that align
 developers, CI, IDEs, and AI agents around one software-system truth.
 
-[RapidKit Labs](https://www.getrapidkit.com) · [Workspai](https://www.workspai.com) · [Learn Workspace Intelligence](https://workspai.dev) · [GitHub](https://github.com/rapidkitlabs)
+[RapidKit Labs](https://www.getrapidkit.com) · [Workspai](https://www.workspai.com) · [Learn Workspace Intelligence](https://workspai.dev) · [GitHub](https://github.com/chistiq)
 
 [![Workspai npm](https://img.shields.io/npm/v/workspai?style=flat-square&label=workspai&color=cb3837)](https://www.npmjs.com/package/workspai)
 [![Workspai VS Code](https://img.shields.io/visual-studio-marketplace/v/rapidkit.rapidkit-vscode?style=flat-square&label=VS%20Code&color=007acc)](https://marketplace.visualstudio.com/items?itemName=rapidkit.rapidkit-vscode)
@@ -47,8 +47,8 @@ are available when a team needs to start a new project.
 | --- | --- | --- |
 | **Workspai CLI** | Canonical Workspace Intelligence engine, contracts, governance, and agent grounding | [`npx workspai --help`](https://www.npmjs.com/package/workspai) |
 | **Workspai for VS Code** | Visual workspace operations, evidence, repair, and AI workflows | [Install extension](https://marketplace.visualstudio.com/items?itemName=rapidkit.rapidkit-vscode) |
-| **RapidKit Core** | Python engine for core-backed generation, modules, and doctor workflows | [Open repository](https://github.com/rapidkitlabs/rapidkit-core) |
-| **Reference Workspaces** | Reproducible examples and adoption patterns | [Explore examples](https://github.com/rapidkitlabs/rapidkit-examples) |
+| **RapidKit Core** | Python engine for core-backed generation, modules, and doctor workflows | [Open repository](https://github.com/chistiq/rapidkit-core) |
+| **Reference Workspaces** | Reproducible examples and adoption patterns | [Explore examples](https://github.com/chistiq/rapidkit-examples) |
 
 ## Start With Existing Software
 
@@ -78,7 +78,7 @@ We build in public and value evidence before confidence, explicit contracts,
 honest capability boundaries, and software that remains useful across languages
 and frameworks.
 
-[Workspai source](https://github.com/rapidkitlabs/workspai) · [Issues](https://github.com/rapidkitlabs/workspai/issues) · [Discussions](https://github.com/rapidkitlabs/workspai/discussions)
+[Workspai source](https://github.com/chistiq/workspai) · [Issues](https://github.com/chistiq/workspai/issues) · [Discussions](https://github.com/chistiq/workspai/discussions)
 
 ---
 
