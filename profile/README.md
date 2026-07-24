@@ -2,11 +2,11 @@
 
 # Chistiq
 
-## Building the open-source infrastructure for AI-native workspaces
+## Intelligence infrastructure company behind RapidKit and Workspai
 
 Home of **Workspai**, **RapidKit Core**, and the technologies that enable developers, IDEs, CI, and AI agents to operate from a shared understanding of software.
 
-[RapidKit](https://www.getrapidkit.com) · [Workspai](https://www.workspai.com) · [Learn Workspace Intelligence](https://workspai.dev) · [GitHub](https://github.com/chistiq)
+[Chistiq](https://chistiq.com) · [RapidKit](https://www.getrapidkit.com) · [Workspai](https://www.workspai.com) · [Learn Workspace Intelligence](https://www.workspai.dev)
 
 [![Workspai npm](https://img.shields.io/npm/v/workspai?style=flat-square&label=workspai&color=cb3837)](https://www.npmjs.com/package/workspai)
 [![Workspai VS Code](https://img.shields.io/visual-studio-marketplace/v/rapidkit.rapidkit-vscode?style=flat-square&label=VS%20Code&color=007acc)](https://marketplace.visualstudio.com/items?itemName=rapidkit.rapidkit-vscode)
@@ -18,7 +18,9 @@ Home of **Workspai**, **RapidKit Core**, and the technologies that enable develo
 
 # What is Chistiq?
 
-Chistiq builds the open-source infrastructure for AI-native workspaces.
+Chistiq is the intelligence infrastructure company behind RapidKit and
+Workspai. We build open-source foundations for creating, understanding, and
+operating software systems.
 
 Instead of treating software as disconnected repositories, files, and prompts, Chistiq enables developers, AI agents, IDEs, and engineering systems to collaborate through a shared workspace model built on architecture, context, knowledge, governance, and execution.
 
@@ -56,9 +58,9 @@ Existing software can be adopted without changing repositories, frameworks, or p
 
 | Product | Role |
 | --- | --- |
-| **Workspai CLI** | Workspace Intelligence platform for creating, adopting, modeling, governing, and operating software workspaces across projects, languages, and frameworks. |
-| **Workspai for VS Code** | Native developer experience for Workspace Intelligence, context, evidence, AI workflows, and workspace operations. |
-| **RapidKit Core** | Production-ready Python framework featuring modular architecture, reusable modules, project scaffolding, and powerful developer tooling. |
+| **[Workspai CLI](https://github.com/chistiq/workspai)** | Workspace Intelligence platform for creating, adopting, modeling, governing, and operating software workspaces across projects, languages, and frameworks. |
+| **[Workspai for VS Code](https://github.com/chistiq/rapidkit-vscode)** | Native developer experience for Workspace Intelligence, context, evidence, AI workflows, and workspace operations. |
+| **[RapidKit Core](https://github.com/chistiq/rapidkit-core)** | Production-ready Python framework featuring modular architecture, reusable modules, project scaffolding, and powerful developer tooling. |
 | **Reference Workspaces** | Example projects, reusable workspace kits, adoption patterns, and reference implementations across modern software stacks. |
 
 ---
@@ -84,9 +86,9 @@ The resulting workspace intelligence powers documentation, AI grounding, IDE int
 
 | Project | Description |
 | --- | --- |
-| **RapidKit** | Open-source Python framework and development platform for production-ready applications. |
-| **Workspai** | Workspace Intelligence platform for developers, AI agents, and engineering systems. |
-| **workspai.dev** | Documentation, guides, tutorials, and Workspace Intelligence learning resources. |
+| **[RapidKit](https://www.getrapidkit.com)** | Open-source Python framework and development platform for production-ready applications. |
+| **[Workspai](https://www.workspai.com)** | Workspace Intelligence platform for developers, AI agents, and engineering systems. |
+| **[workspai.dev](https://www.workspai.dev)** | Documentation, guides, tutorials, and Workspace Intelligence learning resources. |
 
 ---
 
