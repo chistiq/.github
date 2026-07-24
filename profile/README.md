@@ -4,7 +4,9 @@
 
 ## Intelligence infrastructure company behind RapidKit and Workspai
 
-Home of **Workspai**, **RapidKit Core**, and the technologies that enable developers, IDEs, CI, and AI agents to operate from a shared understanding of software.
+Home of **Workspai**, **RapidKit Core**, and open-source tools that help
+developers, IDEs, CI, and AI agents understand and work with the same software
+system.
 
 [Chistiq](https://chistiq.com) · [RapidKit](https://www.getrapidkit.com) · [Workspai](https://www.workspai.com) · [Learn Workspace Intelligence](https://www.workspai.dev)
 
@@ -19,12 +21,12 @@ Home of **Workspai**, **RapidKit Core**, and the technologies that enable develo
 # What is Chistiq?
 
 Chistiq is the intelligence infrastructure company behind RapidKit and
-Workspai. We build open-source foundations for creating, understanding, and
-operating software systems.
+Workspai. We build open-source tools for creating software, understanding how
+its parts fit together, and keeping it healthy as it changes.
 
-Instead of treating software as disconnected repositories, files, and prompts, Chistiq enables developers, AI agents, IDEs, and engineering systems to collaborate through a shared workspace model built on architecture, context, knowledge, governance, and execution.
-
-The ecosystem combines **Workspai** for workspace intelligence with **RapidKit Core** for production-ready application development, enabling teams to build, understand, and evolve modern software systems.
+**Workspai** gives people and tools a shared view of a software system.
+**RapidKit Core** helps teams create and maintain production-ready
+applications.
 
 ---
 
@@ -32,9 +34,11 @@ The ecosystem combines **Workspai** for workspace intelligence with **RapidKit C
 
 Software is more than source code.
 
-Modern software systems include architecture, dependencies, operational knowledge, ownership, runtime behavior, governance, documentation, and the decisions that shape how systems evolve.
+Modern software is more than code. It includes projects, dependencies, APIs,
+deployment files, documentation, rules, tests, owners, and release checks.
 
-Workspace Intelligence transforms those signals into a shared, evidence-backed model that humans and AI can understand together.
+Workspace Intelligence connects that information and keeps a saved,
+checkable view that humans and AI can use together.
 
 ```mermaid
 flowchart TB
@@ -58,27 +62,43 @@ Existing software can be adopted without changing repositories, frameworks, or p
 
 | Product | Role |
 | --- | --- |
-| **[Workspai CLI](https://github.com/chistiq/workspai)** | Workspace Intelligence platform for creating, adopting, modeling, governing, and operating software workspaces across projects, languages, and frameworks. |
-| **[Workspai for VS Code](https://github.com/chistiq/rapidkit-vscode)** | Native developer experience for Workspace Intelligence, context, evidence, AI workflows, and workspace operations. |
-| **[RapidKit Core](https://github.com/chistiq/rapidkit-core)** | Production-ready Python framework featuring modular architecture, reusable modules, project scaffolding, and powerful developer tooling. |
-| **Reference Workspaces** | Example projects, reusable workspace kits, adoption patterns, and reference implementations across modern software stacks. |
+| **[Workspai CLI](https://github.com/chistiq/workspai)** | Connect projects, map a software system, check changes, and prepare context for people and tools. |
+| **[Workspai for VS Code](https://github.com/chistiq/rapidkit-vscode)** | View workspace status, reports, repair actions, and AI workflows inside VS Code. |
+| **[RapidKit Core](https://github.com/chistiq/rapidkit-core)** | Create Python applications and add reusable modules, setup, and health checks. |
+| **Reference Workspaces** | Learn from example projects and common adoption patterns. |
 
 ---
 
-# Start With Existing Software
+# See Workspace Intelligence on Existing Software
+
+Workspai does not require a rewrite or repository move. Connect an existing
+project, then run one command to build a shared and checkable view for people
+and tools.
 
 ```bash
-npx workspai adopt ../existing-project --json
-
-cd ~/.workspai/workspaces/workspai
-
-npx workspai workspace model --json --write
-npx workspai workspace context --for-agent --json --write
-npx workspai workspace agent-sync --write --refresh-context
-npx workspai workspace verify --strict --json
+cd /absolute/path/to/project
+npx workspai adopt .
 ```
 
-The resulting workspace intelligence powers documentation, AI grounding, IDE integrations, governance, impact analysis, release workflows, and engineering automation from the same shared source of truth.
+`adopt` creates or reuses a minimal workspace in the default Workspai location
+and leaves the project where it is. Without the VS Code extension, copy the
+exact `Next shell step` printed by the CLI and continue in that workspace
+terminal:
+
+```bash
+cd ~/.workspai/workspaces/workspai
+npx workspai workspace intelligence run --for-agent generic --strict --json
+```
+
+Use `generic` for vendor-neutral context, or choose `codex`, `claude`,
+`cursor`, or `orca`. The same chain also syncs shared grounding for GitHub
+Copilot, VS Code, and `AGENTS.md` consumers.
+
+The run maps the system, records how its parts connect, checks what changes may
+affect, runs health and release checks, and prepares focused AI context under
+`.workspai/`. Developers, CI, VS Code, MCP clients, and AI agents can use the
+same result. If something is not ready, Workspai shows the reason and where the
+answer came from.
 
 ---
 
