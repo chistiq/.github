@@ -4,7 +4,7 @@
 
 ## Building the open-source infrastructure for AI-native workspaces
 
-Home of **RapidKit Core**, **Workspai**, and the technologies that enable developers, IDEs, CI, and AI agents to operate from a shared understanding of software.
+Home of **Workspai**, **RapidKit Core**, and the technologies that enable developers, IDEs, CI, and AI agents to operate from a shared understanding of software.
 
 [RapidKit](https://www.getrapidkit.com) · [Workspai](https://www.workspai.com) · [Learn Workspace Intelligence](https://workspai.dev) · [GitHub](https://github.com/chistiq)
 
@@ -20,9 +20,9 @@ Home of **RapidKit Core**, **Workspai**, and the technologies that enable develo
 
 Chistiq builds the open-source infrastructure for AI-native workspaces.
 
-Instead of treating software as disconnected repositories, files, and prompts, Chistiq enables developers, AI agents, IDEs, and engineering systems to operate from a shared workspace model built on architecture, context, knowledge, governance, and execution.
+Instead of treating software as disconnected repositories, files, and prompts, Chistiq enables developers, AI agents, IDEs, and engineering systems to collaborate through a shared workspace model built on architecture, context, knowledge, governance, and execution.
 
-The ecosystem is powered by **RapidKit Core** and experienced through **Workspai**, bringing Workspace Intelligence into everyday software development.
+The ecosystem combines **Workspai** for workspace intelligence with **RapidKit Core** for production-ready application development, enabling teams to build, understand, and evolve modern software systems.
 
 ---
 
@@ -30,13 +30,13 @@ The ecosystem is powered by **RapidKit Core** and experienced through **Workspai
 
 Software is more than source code.
 
-It includes architecture, relationships, dependencies, operational knowledge, ownership, runtime behavior, governance, and the decisions that shape how systems evolve.
+Modern software systems include architecture, dependencies, operational knowledge, ownership, runtime behavior, governance, documentation, and the decisions that shape how systems evolve.
 
 Workspace Intelligence transforms those signals into a shared, evidence-backed model that humans and AI can understand together.
 
 ```mermaid
 flowchart TB
-    INPUTS["Software System<br/>Code · Architecture · Knowledge · Runtime · Policies"]
+    INPUTS["Software Systems<br/>Code · Architecture · Knowledge · Runtime · Policies"]
     INTELLIGENCE["Workspace Intelligence<br/>Model · Graph · Context · Evidence · Governance"]
     OUTPUTS["Shared Intelligence<br/>Reports · Skills · AGENTS.md · Impact · Automation"]
     CONSUMERS["Developers · IDEs · CI · AI Agents"]
@@ -48,34 +48,35 @@ flowchart TB
     class INTELLIGENCE core;
 ```
 
+Existing software can be adopted without changing repositories, frameworks, or programming languages. Native project kits are available for teams starting new applications.
+
 ---
 
 # Products
 
-| Product | Purpose |
+| Product | Role |
 | --- | --- |
-| **RapidKit Core** | Open-source platform for modeling software workspaces and building Workspace Intelligence. |
-| **Workspai CLI** | Workspace operations, contracts, governance, automation, and AI workflows. |
-| **Workspai for VS Code** | Workspace Intelligence inside the developer workflow. |
-| **Reference Workspaces** | Example projects, reusable workspace kits, and adoption guides. |
+| **Workspai CLI** | Workspace Intelligence platform for creating, adopting, modeling, governing, and operating software workspaces across projects, languages, and frameworks. |
+| **Workspai for VS Code** | Native developer experience for Workspace Intelligence, context, evidence, AI workflows, and workspace operations. |
+| **RapidKit Core** | Production-ready Python framework featuring modular architecture, reusable modules, project scaffolding, and powerful developer tooling. |
+| **Reference Workspaces** | Example projects, reusable workspace kits, adoption patterns, and reference implementations across modern software stacks. |
 
 ---
 
-# Adopt Existing Software
-
-Existing projects can be adopted without changing repositories, frameworks, or languages.
+# Start With Existing Software
 
 ```bash
 npx workspai adopt ../existing-project --json
 
 cd ~/.workspai/workspaces/workspai
 
-npx workspai workspace model --write
-npx workspai workspace context --for-agent --write
-npx workspai workspace verify --strict
+npx workspai workspace model --json --write
+npx workspai workspace context --for-agent --json --write
+npx workspai workspace agent-sync --write --refresh-context
+npx workspai workspace verify --strict --json
 ```
 
-Once modeled, the same workspace intelligence powers documentation, AI grounding, impact analysis, governance, release workflows, and developer tooling.
+The resulting workspace intelligence powers documentation, AI grounding, IDE integrations, governance, impact analysis, release workflows, and engineering automation from the same shared source of truth.
 
 ---
 
@@ -83,17 +84,23 @@ Once modeled, the same workspace intelligence powers documentation, AI grounding
 
 | Project | Description |
 | --- | --- |
-| **RapidKit** | Open-source platform for Workspace Intelligence. |
-| **Workspai** | Developer experience for Workspace Intelligence. |
-| **workspai.dev** | Documentation, guides, and learning resources. |
+| **RapidKit** | Open-source Python framework and development platform for production-ready applications. |
+| **Workspai** | Workspace Intelligence platform for developers, AI agents, and engineering systems. |
+| **workspai.dev** | Documentation, guides, tutorials, and Workspace Intelligence learning resources. |
 
 ---
 
 # Open Source
 
-Chistiq is built in the open.
+We build in the open and believe software should remain understandable, governable, and evidence-driven.
 
-We believe software should be understandable, governable, and shared between humans and AI through explicit contracts, evidence, and reusable workspace knowledge.
+Our principles are simple:
+
+- Shared understanding over isolated context.
+- Explicit contracts over hidden assumptions.
+- Evidence before confidence.
+- Open standards over vendor lock-in.
+- Software that humans and AI can understand together.
 
 ---
 
