@@ -1,13 +1,12 @@
 <div align="center">
 
-# Chistiq Labs
+# Chistiq
 
-## Open-source infrastructure for building and understanding software systems
+## Building the open-source infrastructure for AI-native workspaces
 
-Home of **Workspai**, **RapidKit Core**, and the shared contracts that align
-developers, CI, IDEs, and AI agents around one software-system truth.
+Home of **RapidKit Core**, **Workspai**, and the technologies that enable developers, IDEs, CI, and AI agents to operate from a shared understanding of software.
 
-[RapidKit Labs](https://www.getrapidkit.com) · [Workspai](https://www.workspai.com) · [Learn Workspace Intelligence](https://workspai.dev) · [GitHub](https://github.com/chistiq)
+[RapidKit](https://www.getrapidkit.com) · [Workspai](https://www.workspai.com) · [Learn Workspace Intelligence](https://workspai.dev) · [GitHub](https://github.com/chistiq)
 
 [![Workspai npm](https://img.shields.io/npm/v/workspai?style=flat-square&label=workspai&color=cb3837)](https://www.npmjs.com/package/workspai)
 [![Workspai VS Code](https://img.shields.io/visual-studio-marketplace/v/rapidkit.rapidkit-vscode?style=flat-square&label=VS%20Code&color=007acc)](https://marketplace.visualstudio.com/items?itemName=rapidkit.rapidkit-vscode)
@@ -17,73 +16,91 @@ developers, CI, IDEs, and AI agents around one software-system truth.
 
 ---
 
-## Workspace Intelligence
+# What is Chistiq?
 
-AI tools can read code. Software systems also have projects, dependencies,
-runtime boundaries, policies, ownership, operational evidence, and release
-decisions. Workspai turns those facts into a shared, evidence-backed model.
+Chistiq builds the open-source infrastructure for AI-native workspaces.
+
+Instead of treating software as disconnected repositories, files, and prompts, Chistiq enables developers, AI agents, IDEs, and engineering systems to operate from a shared workspace model built on architecture, context, knowledge, governance, and execution.
+
+The ecosystem is powered by **RapidKit Core** and experienced through **Workspai**, bringing Workspace Intelligence into everyday software development.
+
+---
+
+# Workspace Intelligence
+
+Software is more than source code.
+
+It includes architecture, relationships, dependencies, operational knowledge, ownership, runtime behavior, governance, and the decisions that shape how systems evolve.
+
+Workspace Intelligence transforms those signals into a shared, evidence-backed model that humans and AI can understand together.
 
 ```mermaid
 flowchart TB
-    INPUTS["Software system inputs<br/>Projects · Policies · Contracts · Changes · Runtime"]
-    INTELLIGENCE["Workspace Intelligence<br/>Model · Graph · Context · Impact · Verify · Explain"]
-    OUTPUTS["Evidence-backed outputs<br/>Reports · AGENTS.md · Skills · Freshness · Release gates"]
-    CONSUMERS["Developers · CI · IDEs · AI agents · MCP clients"]
+    INPUTS["Software System<br/>Code · Architecture · Knowledge · Runtime · Policies"]
+    INTELLIGENCE["Workspace Intelligence<br/>Model · Graph · Context · Evidence · Governance"]
+    OUTPUTS["Shared Intelligence<br/>Reports · Skills · AGENTS.md · Impact · Automation"]
+    CONSUMERS["Developers · IDEs · CI · AI Agents"]
 
     INPUTS --> INTELLIGENCE --> OUTPUTS --> CONSUMERS
-    CONSUMERS -. outcomes and fresh evidence .-> INPUTS
+    CONSUMERS -. Continuous feedback .-> INPUTS
 
     classDef core fill:#0f172a,color:#f8fafc,stroke:#38bdf8,stroke-width:2px;
     class INTELLIGENCE core;
 ```
 
-Existing projects can enter this architecture through adopt or import without
-changing their language, framework, or source location. First-class create kits
-are available when a team needs to start a new project.
+---
 
-## Products
+# Products
 
-| Product | Responsibility | Start |
-| --- | --- | --- |
-| **Workspai CLI** | Canonical Workspace Intelligence engine, contracts, governance, and agent grounding | [`npx workspai --help`](https://www.npmjs.com/package/workspai) |
-| **Workspai for VS Code** | Visual workspace operations, evidence, repair, and AI workflows | [Install extension](https://marketplace.visualstudio.com/items?itemName=rapidkit.rapidkit-vscode) |
-| **RapidKit Core** | Python engine for core-backed generation, modules, and doctor workflows | [Open repository](https://github.com/chistiq/rapidkit-core) |
-| **Reference Workspaces** | Reproducible examples and adoption patterns | [Explore examples](https://github.com/chistiq/rapidkit-examples) |
+| Product | Purpose |
+| --- | --- |
+| **RapidKit Core** | Open-source platform for modeling software workspaces and building Workspace Intelligence. |
+| **Workspai CLI** | Workspace operations, contracts, governance, automation, and AI workflows. |
+| **Workspai for VS Code** | Workspace Intelligence inside the developer workflow. |
+| **Reference Workspaces** | Example projects, reusable workspace kits, and adoption guides. |
 
-## Start With Existing Software
+---
+
+# Adopt Existing Software
+
+Existing projects can be adopted without changing repositories, frameworks, or languages.
 
 ```bash
 npx workspai adopt ../existing-project --json
+
 cd ~/.workspai/workspaces/workspai
-npx workspai workspace model --json --write
-npx workspai workspace context --for-agent --json --write
-npx workspai workspace agent-sync --write --refresh-context
-npx workspai workspace verify --strict --json
+
+npx workspai workspace model --write
+npx workspai workspace context --for-agent --write
+npx workspai workspace verify --strict
 ```
 
-The same evidence can produce workspace reports, `AGENTS.md`, Skills, IDE
-grounding, CI gates, impact analysis, and release decisions.
+Once modeled, the same workspace intelligence powers documentation, AI grounding, impact analysis, governance, release workflows, and developer tooling.
 
-## Domain Map
+---
 
-| Domain | Role |
+# Ecosystem
+
+| Project | Description |
 | --- | --- |
-| [getrapidkit.com](https://www.getrapidkit.com) | RapidKit Labs brand and product ecosystem |
-| [workspai.dev](https://workspai.dev) | Workspace Intelligence knowledge portal |
-| [workspai.com](https://www.workspai.com) | Workspai product and online experience |
+| **RapidKit** | Open-source platform for Workspace Intelligence. |
+| **Workspai** | Developer experience for Workspace Intelligence. |
+| **workspai.dev** | Documentation, guides, and learning resources. |
 
-## Open Source
+---
 
-We build in public and value evidence before confidence, explicit contracts,
-honest capability boundaries, and software that remains useful across languages
-and frameworks.
+# Open Source
 
-[Workspai source](https://github.com/chistiq/workspai) · [Issues](https://github.com/chistiq/workspai/issues) · [Discussions](https://github.com/chistiq/workspai/discussions)
+Chistiq is built in the open.
+
+We believe software should be understandable, governable, and shared between humans and AI through explicit contracts, evidence, and reusable workspace knowledge.
 
 ---
 
 <div align="center">
 
-**One workspace. One truth. Humans and AI aligned.**
+## One workspace. One truth.
+
+### Shared by humans and AI.
 
 </div>
